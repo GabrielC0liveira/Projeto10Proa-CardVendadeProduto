@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #e6e6e6;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    max-width: 720px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    justify-content: space-between;
+    position: relative;
+}
+.container::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 12px 12px 0;
+    clip-path: circle(65% at right 35%);
+    background: linear-gradient(135deg, #fd9bb0 10%, #f6416c 100%);
+}
+.container .caixa.um{
+    padding: 35px 5px 0 35px;
+}
+.caixa.um .detalhes .topico{
+    font-size: 30px;
+    font-weight: 500;
+}
+.caixa.um .detalhes p{
+    color: 737373;
+    font-size: 13px;
+    font-weight: 500;
+}
+.caixa.um .detalhes .nota{
+    color: #fd9bb0;
+}
+.caixa.um .detalhes .caixapreco{
+    margin-top: 16px;
+}
+.detalhes .caixapreco .desconto{
+    font-size: 20px;
+    color: #737373;
+    margin: 10px 0 0 12px;
+    position: relative;
+}
+.caixapreco .desconto::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #737373;
+    top: 50%;
+    left: -8px;
+}
+.detalhes .caixapreco .preco{
+    font-size: 30px;
+    color: #fc6989;
+}
+.caixa.um .botao1{
+    margin-top: 55px;
+}
+.caixa.um .botao1 button{
+    outline: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding: 8px 16px;
+    background: #00e6e6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.caixa.um .botao1 button:hover{
+    transform: scale(0.98);
+}
+.container .caixa.dois .imagemcaixa{
+    position: relative;
+    text-align: right;
+    right: 0;
+    bottom: 32px;
+}
+.container .caixa.dois .imagem{
+    height: 340px;
+    width: 430px;
+}
+.caixa.dois .imagem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.caixa.dois .info{
+    margin: 0 35px 0 0;
+}
+.caixa.dois .info .brand{
+    font-size: 17px;
+    color: #c9032e;
+    font-weight: 600;
+}
+.caixa.dois .info .nome{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.caixa.dois .info .envio{
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+}
+.caixa.dois .info .botao2{
+    margin: 17px 0;
+}
+.caixa.dois .info .botao2 button{
+    outline: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    background: transparent;
+    cursor: pointer;
+}
